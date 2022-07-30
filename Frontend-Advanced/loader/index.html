@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download progress</title>
+    <style>
+      .progress {
+        margin: 20px auto;
+        width: 70%;
+        height: 40px;
+        border: 3px solid green;
+        border-radius: 15px;
+        background-color: gainsboro;
+        position: relative;
+        overflow: hidden;
+      }
+      #loader {
+        width: 0%;
+        height: 100%;
+        border-radius: 15px;
+        background: greenyellow;
+      }
+      #data {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+        font-size: 24px;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px white;
+      }
+    </style>
+  </head>
+  <script src="script.js" defer></script>
+  <body>
+    <div>
+      <button id="run">Run Code</button>
+    </div>
+
+    <div class="progress">
+      <div id="loader"></div>
+      <div id="data"></div>
+    </div>
+  </body>
+</html>
